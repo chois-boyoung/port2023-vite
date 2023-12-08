@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <h1>Vite 시작하기</h1>
     <script type="module" src="assets/js/main.js"></script>
 </body>
     <div id="skip">
@@ -26,11 +25,39 @@
     <!-- skip -->
 
 
-    <header id="header"></header>
+    <header id="header" role="banner">
+        <div class="header__inner">
+            <div class="header__logo">
+                <h1>
+                    <a href="#">portfolio<em>vite</em></a>
+                </h1>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#skill">skill</a></li>
+                    <li><a href="#site">site</a></li>
+                    <li><a href="#port">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__nav__mobile" 
+            id="headerToggle" 
+            aria-activedescendant="primary-menu" 
+            aria-expanded="false" 
+            role="button"
+            tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </header>
     <!-- header -->
 
 
-    <main id="main">
+    <main id="main" role="main">
         <section id="intro">
             intro
         </section>
@@ -59,6 +86,6 @@
     <!-- main -->
 
 
-    <footer id="footer"></footer>
+    <footer id="footer" role="contentinfo"></footer>
     <!-- footer -->
 </html>
